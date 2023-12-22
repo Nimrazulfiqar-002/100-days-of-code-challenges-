@@ -28,7 +28,7 @@ Feel free to explore the code, projects, and maybe find some inspiration for you
 
 ## Daily Log
 
-Check out my [daily log](DailyLog.md) to see what I've been working on each day. I'll be sharing my experiences, challenges, and the things I've learned.
+Check out my https://github.com/Nimrazulfiqar-002/100-days-of-code-challenges-/tree/main to see what I've been working on each day. I'll be sharing my experiences, challenges, and the things I've learned.
 
 ## Progress
 
