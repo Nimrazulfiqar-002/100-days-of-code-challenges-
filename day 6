@@ -1,0 +1,144 @@
+Here's the day 6 practicing 
+                                                           Website using Grid
+Html code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>assignment  6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>Web using Grid</h1>
+        <h2>Explore the Art of Web Design with Grid Mastery</h2>
+    </header>
+    <div class="container">
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+                
+              </ul>
+        </nav>
+    <main>
+        <section id="html">
+            <img src="./img/What-is-HTML-Article-Page-948_500.png" alt="html image">
+            <h2> <center>HTML</center></h2>
+            <p>HTML is the standard markup language for creating web pages. It describes the structure of a web page using markup.</p>
+        </section>
+
+        <section id="css">
+            <img src="./img/css.jpg" alt="css image">
+            <h2><center>CSS</center></h2>
+            <p>CSS is a style sheet language used for describing the presentation of a document written in HTML. It enhances the look and feel of HTML content.</p>
+        </section>
+
+        <section id="js">
+            <img src="./img/maxresdefault.jpg" alt="javascript and react image">
+            <h2><center>JavaScript & React</center></h2>
+            <p>JavaScript is a programming language that enables interactive web pages. React is a JavaScript library for building user interfaces, especially single-page applications.</p>
+        </section>
+    </main>
+</div>
+    <br><br><br>
+    <footer>
+        <p>&copy; <em>2024 Web Development </em></p>
+    </footer>
+</body>
+</html>
+
+
+Css code:
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    color: #fff; 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+nav {
+    padding: 15px;
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700; 
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px; 
+    padding: 40px; 
+}
+
+section {
+    border: 1px solid #ddd;
+    border-radius: 12px; 
+    padding: 30px;
+    transition: transform 0.3s ease;
+    background: #fff;
+}
+
+section:hover {
+    transform: scale(1.05); 
+}
+
+img {
+    width: 100%;
+    height: auto; 
+    border-radius: 12px; 
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5em; 
+    font-size: 80%; 
+}
+
