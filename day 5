@@ -1,1 +1,127 @@
+Here's the Day 5 practice :
+                                                          Website using flexbox
+HTML CODE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 5</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1> Website using Flexbox </h1>
+        
+    </header>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: right;" style="order: -1;">Welcome to Our Website</h2>
+            <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis pariatur modi nobis </p>
+            <img src="./img/images.jpg" alt="image" style="order: -1;">
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Discover Our Services</h2>
+            <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis pariatur modi nobis </p>
+            <img src="./img/discovery.jpg" alt=" image" style="order: 1;">
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: right;">Contact Us</h2>
+            <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis pariatur modi nobis </p>
+            <img src="./img/contact t.png" alt="image" style="order: -1;">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024  Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+Css code:
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    color: black;
+    text-align: center;
+    padding: 2em 0;
+    background-image: url(./img/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 0.7;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ h2 {
+    color: #333;
+
+}
+ h1{
+    color: #000000;
+ }
+p {
+    color: #666;
+    height: 0.5px;
+    
+}
+/* .para{
+    text-align: left;
+} */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
 
