@@ -1,1 +1,36 @@
+// find the missing number from arr=[1,2,3,5]
 
+let arr = [1, 2, 3, 5];
+
+function findMissingNumber(arr) {
+    // Find the length of the complete sequence
+    let n = arr.length + 1; // Add 1 since one number is missing
+    
+    // Calculate the expected sum of numbers from 1 to n
+    let expectedSum = (n * (n + 1)) / 2;
+
+    // Calculate the actual sum of the array
+    let actualSum = arr.reduce((sum, num) => sum + num, 0);
+
+    // The missing number is the difference
+    return expectedSum - actualSum;
+}
+
+let missingNumber = findMissingNumber(arr);
+console.log(`The missing number is: ${missingNumber}`);
+
+//another 
+
+let arr = [1, 2, 3, 5];
+let num = [1, 2, 3, 4,  6];
+
+function findMissing(arr, num) {
+    for (let i = 0; i < num.length; i++) {
+        if (arr[i] !== num[i]) {
+            console.log(`Missing number is: ${num[i]}`);
+            // break; // Exit the loop once the missing number is found
+        }
+    }
+}
+
+findMissing(arr, num);
